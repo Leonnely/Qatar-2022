@@ -15,7 +15,7 @@ function countdown(id,limitDate,finalMessage){
         
         let seconds =("0"+ Math.floor(limitTime % 60)).slice(-2)
     
-    $countdown.innerHTML = `<h3>Faltan: ${days} D ${hours} HS ${minutes} M ${seconds} S</h3>`;
+    $countdown.innerHTML = `<h3>${days} D ${hours} HS ${minutes} M ${seconds} S</h3>`;
 
     if (limitTime < 0) {
       clearInterval(countdownTempo);
